@@ -1,19 +1,20 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import Contact from './components/Contact'
+import React from 'react';
+import Navbar from './components/Navbar.jsx';
+import Hero from './components/Hero.jsx';
+import ValueSections from './components/ValueSections.jsx';
+import Showcase from './components/Showcase.jsx';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white selection:bg-indigo-500/30 selection:text-white">
       <Navbar />
-      <main>
+      <main className="pt-20">
         <Hero />
-        <Services />
-        <Contact />
+        <ValueSections />
+        <Showcase />
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
